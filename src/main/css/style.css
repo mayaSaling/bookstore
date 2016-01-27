@@ -1,0 +1,34 @@
+table {
+    width: 70%;
+}
+
+td {
+    text-align: center;
+}
+.product-picture {
+  width: 100px;
+  height: 150px;
+}
+
+.total-text {
+    text-align: left;
+    width: 80%;
+}
+
+.total-price {
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+}
+
+.productListUl{
+  display: table;
+  width: 100%;
+}
+
+.productListLi {
+  display: table-cell;
+  width: 33%;
+}

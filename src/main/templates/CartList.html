@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <tr ng-repeat="cartItem in cartCtrl.cart track by $index">
+        <td> {{ cartItem.title }} </td>
+        <td> {{ cartItem.quantity}} db</td>
+        <td> {{ cartItem.quantity * cartItem.price }} Ft</td>
+    </tr>
+</table>
+<hr align="left">
+<table>
+    <tr>
+        <td colspan="2" class="total-text"><h3>Total: </h3></td>
+        <td class="total-price"><h3> {{ cartCtrl.getTotalPrice() }} Ft</h3></td>
+    </tr>
+</table>

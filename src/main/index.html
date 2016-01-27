@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="bookstore">
+
+  <head>
+    <title>BOOK STORE</title>
+    <!-- stylesheets -->
+    <link href="framework/mocha.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- libraries -->
+    <script src="framework/mocha.js"></script>
+    <script src="framework/angular.js"></script>
+    <script src="framework/angular-ui-router.js"></script>
+    <script src="framework/chai.js"></script>
+    <script src="framework/chai-as-promised.js"></script> 
+    <script src="framework/sinon-1.12.2.js"></script>
+    <script src="framework/underscore.js"></script>
+    <script src="framework/moment.js"></script>
+    <script>
+      mocha.setup({
+        "ui": "bdd",
+        "reporter": "html"
+      });
+    </script>
+    <script src="framework/angular-mocks.js"></script>
+    
+    <!-- project scripts -->
+    <script src="module.js"></script>
+    <script src="routing/route.js"></script>
+    
+    <script src="controllers/ProductController.js"></script>
+    <script src="controllers/CartController.js"></script>
+    <script src="controllers/PayController.js"></script>
+    <script src="controllers/SearchController.js"></script>
+    
+    <script src="directives/CartListDirective.js"></script>
+    
+    <script src="services/ProductService.js"></script>
+
+    <script src="services/PaymentOptionsProvider.js"></script>
+    
+    <!-- test scripts -->
+    <script src="../test/controllers/ProductControllerTest.js"></script>
+
+  </head>
+
+  <body>
+    <label><input ng-model="tryapp" type="checkbox"/>TRY APP</label>
+    <div ng-show="tryapp" ng-controller="ProductController as productCtrl">
+        <div ng-controller="CartController as cartCtrl">
+            <div ui-sref="home"> </div>
+            <div ui-view></div>
+        </div>
+    </div>
+
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
+  </body>
+
+</html>

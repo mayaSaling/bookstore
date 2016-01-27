@@ -1,0 +1,50 @@
+[
+  {
+    "title" : "Clean Code",
+    "author" : "Robert C Martin",
+    "year"  : 2009,
+    "imgurl" : "http://ecx.images-amazon.com/images/I/51oXyW8WQwL._SX258_BO1,204,203,200_.jpg",
+    "quantity" : 5,
+    "price" : 2000
+  },
+  {
+    "title" : "Gyóni Géza összes versei",
+    "author" : "Gyóni Géza",
+    "year"  : 2010,
+    "imgurl" : "http://marvin.bline.hu/product_images/895/B922149.JPG",
+    "quantity" : 5,
+    "price" : 3999
+  },
+  {
+    "title" : "The lovely bones",
+    "author" : "Alice Sebold",
+    "year"  : 2010,
+    "imgurl": "http://www.tribute.ca/tribute_objects/images/movies/The_Lovely_Bones/TheLovelyBones.jpg",
+    "quantity": 10,
+    "price" : 3215
+  },
+  {
+    "title" : "",
+    "author" : "",
+    "year" : "",
+    "imgurl": "",
+    "quantity" : "",
+    "price" : ""
+  },
+  {
+    "title" : "",
+    "author" : "",
+    "year" : "",
+    "imgurl": "",
+    "quantity" : "",
+    "price" : ""
+  },
+  {
+    "title" : "",
+    "author" : "",
+    "year" : "",
+    "imgurl": "",
+    "quantity" : "",
+    "price" : ""
+  }
+]

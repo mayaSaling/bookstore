@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Bookline",
+    "address": [{
+                        "address" : "1023 Budapest Perec utca 12",
+                        "phone": "+36 70 896 3652"
+                      },
+                      {
+                        "address": "1116 Budapest Móricz Zsiga körtér 5",
+                        "phone": "+36 1 256 9852"
+                      },
+                      {
+                        "address":  "1087 Budapest Bakáts tér 7",
+                        "phone": "+36 90 123 4569"
+                      },
+                      {
+                        "address": "3567 Miskolc Juhász utca 12",
+                        "phone": "+36 23 145 698"
+                      },
+                      {
+                        "address": "4567 Debrecen Miklós utca 88",
+                        "phone": "+36 91 569 6325"
+                      },
+                      {
+                        "address": "1946 Kimle Paraszt utca 73",
+                        "phone": "+36 1 2563 698"
+                      }
+                ],
+    "phone": "+36 20 9563 265"
+  }, 
+  {
+    "name": "Libri",
+    "address": "",
+    "phone": "+36 20 9563 265"
+  },
+  {
+    "name": "Alexandra",
+    "address": "",
+    "phone": "+36 20 9563 265"
+  }
+]

@@ -1,0 +1,22 @@
+<div>
+  <br><br>
+    <button ng-click="productCtrl.openSearchPage()">SEARCH PRODUCT</button>
+    <ul class="productListUl">
+          <li class="productListLi" ng-repeat="product in productCtrl.products"> 
+            <h3> {{ product.title }} </h3> 
+            <h5> {{product.author}} </h5> 
+            <h5> {{product.year}} </h5> 
+            <a href="{{product.imgurl}}">
+              <img class="product-picture" alt="{{product.title}}" src="{{product.imgurl}}">
+            </a>
+            <div  ng-show="productCtrl.isAvailable(product)">
+              <h5>Quantity: {{product.quantity}}</h5>
+              <button ng-click="cartCtrl.addToCart(product)">ADD TO CART</button>
+            </div
+          </li>
+    </ul>
+</div>
+
+<form >
+    <button ng-click="cartCtrl.finishShopping()">FINISH SHOPPING</button>
+</form>

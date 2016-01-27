@@ -1,0 +1,37 @@
+<br><br><br>
+<h3>Delivery details</h3>
+
+<form ng-submit="payCtrl.saveOrder()">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" ng-model="payCtrl.orderDetails.name" required size="50" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" ng-model="payCtrl.orderDetails.address" required size="50"></td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td><input type="text" ng-model="payCtrl.orderDetails.phone" required size="50"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" ng-model="payCtrl.orderDetails.email" required size="50"></td>
+        </tr>
+    </table>
+    
+    <div>
+    
+        Takeover: <label><input type="checkbox" ng-model="pick"/>pick</label> <label><input type="checkbox"/>delivery</label>
+        
+        <div ng-show="pick">
+          <select>
+            <option ng-repeat="paymentType in payCtrl.paymentTypes" ng-selected="payCtrl.isSelected(paymentType)">{{ paymentType }}</option>
+          </select>
+        </div>
+    </div>
+  
+    <input type="checkbox" name="terms" required> Accept the Terms and Conditions.
+    <button ng-click="payCtrl.setOrderedProducts(cartCtrl.cart)">Rendelés véglegesítése</button>
+</form>

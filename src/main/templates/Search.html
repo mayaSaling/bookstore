@@ -1,0 +1,24 @@
+<br><br><br>
+<div>
+    Search: <input type="text" ng-model="searchCtrl.searchText">
+    <button ng-click="searchCtrl.search(productCtrl.products)">SEARCH</button>
+  <div ng-show="searchCtrl.showResults">
+    Result:
+      <div ng-show="searchCtrl.results.length > 0">
+          Juheeeej ...
+          <table>
+              <tr ng-repeat="product in searchCtrl.results track by $index">
+                  <td>{{ product.title }}</td>
+                  <td> {{ product.price }} Ft</td>
+                  <td> <button>SHOW DETAILS</button> </td>
+              </tr>
+          </table>
+      </div>
+      <div ng-show="searchCtrl.results.length === 0">
+          Sorry ...
+      </div>
+  </div>
+</div>
+<div>
+    <button ng-click="searchCtrl.openHomePage()">HOME</button>
+</div>
